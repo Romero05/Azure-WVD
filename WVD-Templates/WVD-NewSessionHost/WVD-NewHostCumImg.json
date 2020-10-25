@@ -25,19 +25,19 @@
       "type": "string",
       "metadata": {
         "description": "Provide ResourceID of your custom image"
-      },
-      "galleryName": {
-        "type": "string",
-        "metadata": {
-          "description": "Name of the Shared Image Gallery."
+    },
+    "galleryName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Shared Image Gallery."
         }
-      },
-      "galleryImageDefinitionName": {
-        "type": "string",
-        "metadata": {
-          "description": "Name of the Image Definition."
+    },
+    "galleryImageDefinitionName": {
+      "type": "string",
+      "metadata": {
+      "description": "Name of the Image Definition."
         }
-      },
+    },
       "galleryImageVersionName": {
         "type": "string",
         "metadata": {
