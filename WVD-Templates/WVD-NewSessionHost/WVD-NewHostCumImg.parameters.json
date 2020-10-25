@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Prefix": {
+      "value": "Optimize"
+    },
+    "AdminUserName": {
+      "value": "lntad"
+    },
+    "DomainFQDN": {
+      "value": "Domain"
+    },
+    "Instance": {
+      "value": 1
+    },
+    "OperatingSystem": {
+      "value": "Client"
+    },
+    "VMSize": {
+      "value": "Small"
+    },
+    "VnetRgName": {
+      "value": "Provide The Resource Group"
+    },
+    "VnetName": {
+      "value": "Provide The Virualt Network Name"
+    },
+    "SubnetName": {
+      "value": "Provide The Subnet"
+    },
+    "ProfilePath": {
+      "value": "Provide the FSLogix Profile Store Location"
+    },
+    "RegistrationToken": {
+      "value": "Provide The Registration Token of Your Host Pool"
+    },
+    "Optimize": {
+      "value": true
+    }
+  }
+}
