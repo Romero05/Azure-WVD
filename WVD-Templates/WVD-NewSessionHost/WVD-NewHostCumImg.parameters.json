@@ -18,19 +18,19 @@
       "value": "Large"
     },
     "VnetRgName": {
-      "value": "Provide The Resource Group"
+      "value": ""
     },
     "VnetName": {
-      "value": "Provide The Virualt Network Name"
+      "value": ""
     },
     "SubnetName": {
-      "value": "Provide The Subnet"
+      "value": ""
     },
     "ProfilePath": {
-      "value": "Provide the FSLogix Profile Store Location"
+      "value": ""
     },
     "RegistrationToken": {
-      "value": "Provide The Registration Token of Your Host Pool"
+      "value": ""
     },
     "Optimize": {
       "value": true
