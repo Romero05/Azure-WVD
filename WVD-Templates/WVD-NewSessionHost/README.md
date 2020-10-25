@@ -14,6 +14,6 @@ What this will do:
 
 # Deploy New Session Host With Customer Image
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-storage-account-create%2Fazuredeploy.json" target="_blank">
+<a href="https://raw.githubusercontent.com/Romero05/Azure-WVD/main/WVD-Templates/WVD-NewSessionHost/WVD-NewHostCumImg.json" target="_blank">
   <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
