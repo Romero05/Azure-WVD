@@ -26,19 +26,14 @@
       "metadata": {
         "description": "Name of the Shared Image Gallery."
     },
-    "galleryImageDefinitionName":{
-      "type": "string",
-      "metadata": {
-        "description": "Name of the Image Definition."
-      }
+    "galleryImageDefinitionName": {
+      "type": "string"
     },
     "galleryImageVersionName":{
-      "type": "string",
-      "metadata":{
-        "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+        "type": "string"
       }
-    }
-    },
+    },    
+
     "VMSize": {
       "type": "string",
       "defaultValue": "Small",
