@@ -68,10 +68,10 @@
         "sku": "2019-Datacenter-smalldisk",
         "version": "latest"
       },
-      "Client": {
-        "publisher": "microsoftwindowsdesktop",
-        "offer": "office-365",
-        "sku": "1903-evd-o365pp",
+      "Folloren_Prod_V1": {
+        "publisher": "Folloren",
+        "offer": "WVD",
+        "sku": "Win10Multi1909",
         "version": "latest"
       },
       "Multi": {
