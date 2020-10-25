@@ -51,6 +51,24 @@
         true,
         false
       ]
+    },
+    "galleryName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Shared Image Gallery."
+      }
+    },
+    "galleryImageDefinitionName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Image Definition."
+      }
+    },
+    "galleryImageVersionName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+      }
     }
   },
   "variables": {
@@ -155,7 +173,7 @@
             }
           },
           "imageReference": {
-            "id": "/subscriptions/1e7c77af-3569-4911-8730-82ca5e503d4e/resourceGroups/rg-wvdtemplates/providers/Microsoft.Compute/galleries/sig_wvd_prod/images/Folloren_Prod_V1/versions/10.0.2"
+            "id": "[resourceId('Microsoft.Compute/galleries/images/versions',parameters('galleryName'),parameters('galleryImageDefinitionName'),parameters('galleryImageVersionName')]"
           }
         },
         "networkProfile": {
