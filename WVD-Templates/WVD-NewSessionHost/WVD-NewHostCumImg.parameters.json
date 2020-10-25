@@ -12,10 +12,10 @@
       "value": "Folloren.keyhosting.no"
     },
     "Instance": {
-      "value": 1
+      "value": 2
     },
     "VMSize": {
-      "value": "Small"
+      "value": "Large"
     },
     "VnetRgName": {
       "value": "Provide The Resource Group"
