@@ -14,9 +14,6 @@
     "Instance": {
       "value": 1
     },
-    "OperatingSystem": {
-      "value": "Client"
-    },
     "VMSize": {
       "value": "Small"
     },
