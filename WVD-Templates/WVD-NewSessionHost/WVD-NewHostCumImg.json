@@ -186,7 +186,7 @@
             "provisionVmAgent": true
           }
         },
-        "licenseType": "[variables('License')[parameters('OperatingSystem')].License]"
+        "licenseType": "Windows_Client"
       },
       "zones": [
         1
