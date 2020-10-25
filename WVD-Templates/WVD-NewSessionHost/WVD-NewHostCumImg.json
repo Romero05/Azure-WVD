@@ -28,6 +28,24 @@
       }
      
     },
+    "galleryName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Shared Image Gallery."
+      }
+    },
+    "galleryImageDefinitionName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Image Definition."
+      }
+    },
+    "galleryImageVersionName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+      },
+	    
     "VMSize": {
       "type": "string",
       "defaultValue": "Small",
@@ -171,7 +189,7 @@
             }
           },
           "imageReference": {
-            "id": "[parameters('OperatingSystem')]"
+            "id": "[resourceId('Microsoft.Compute/galleries/images/versions', parameters('galleryName'), parameters('galleryImageDefinitionName'), parameters('galleryImageVersionName'))]"
           }
         },      
         "networkProfile": {
