@@ -21,29 +21,23 @@
       "maxValue": 99,
       "defaultValue": 1
     },
-    "OperatingSystem": {
-      "type": "string",
-      "metadata": {
-        "description": "Provide ResourceID of your custom image"
-    },
-    "galleryName": {
+    "galleryname": {
       "type": "string",
       "metadata": {
         "description": "Name of the Shared Image Gallery."
-        }
     },
-    "galleryImageDefinitionName": {
+    "galleryImageDefinitionName":{
       "type": "string",
       "metadata": {
-      "description": "Name of the Image Definition."
-        }
-    },
-      "galleryImageVersionName": {
-        "type": "string",
-        "metadata": {
-          "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
-        }
+        "description": "Name of the Image Definition."
       }
+    },
+    "galleryImageVersionName":{
+      "type": "string",
+      "metadata":{
+        "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+      }
+    }
     },
     "VMSize": {
       "type": "string",
