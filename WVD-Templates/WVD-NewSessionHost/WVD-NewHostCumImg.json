@@ -173,7 +173,7 @@
             }
           },
           "imageReference": {
-            "id": "[resourceId('Microsoft.Compute/galleries/images/versions',parameters('galleryName'),parameters('galleryImageDefinitionName'),parameters('galleryImageVersionName')]"
+            "id": "[resourceId('Microsoft.Compute/galleries/images/versions',parameters('galleryName'),parameters('galleryImageDefinitionName'),parameters('galleryImageVersionName'))]"
           }
         },
         "networkProfile": {
