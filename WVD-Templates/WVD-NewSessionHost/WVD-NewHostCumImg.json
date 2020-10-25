@@ -26,7 +26,6 @@
       "metadata": {
         "description": "Provide ResourceID of your custom image"
       }
-     
     },
     "VMSize": {
       "type": "string",
@@ -69,9 +68,9 @@
         "version": "latest"
       },
       "Client": {
-        "publisher": "microsoftwindowsdesktop",
-        "offer": "office-365",
-        "sku": "1903-evd-o365pp",
+        "publisher": "Folloren",
+        "offer": "WVD",
+        "sku": "Win10Multi1909",
         "version": "latest"
       },
       "Multi": {
@@ -143,7 +142,6 @@
       "dependsOn": [
         
       ]
-
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
