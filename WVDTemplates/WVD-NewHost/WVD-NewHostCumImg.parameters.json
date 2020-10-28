@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Prefix": {
-      "value": "Optimize"
+      "value": "WVD"
     },
     "AdminUserName": {
       "value": "lntad"
     },
     "DomainFQDN": {
-      "value": ""
+      "value": "Test"
     },
     "Instance": {
       "value": 2
@@ -18,19 +18,19 @@
       "value": "Large"
     },
     "VnetRgName": {
-      "value": ""
+      "value": "Test"
     },
     "VnetName": {
-      "value": ""
+      "value": "Test"
     },
     "SubnetName": {
-      "value": ""
+      "value": "Test"
     },
     "ProfilePath": {
-      "value": ""
+      "value": "Test"
     },
     "RegistrationToken": {
-      "value": ""
+      "value": "211243435435"
     },
     "Optimize": {
       "value": true
