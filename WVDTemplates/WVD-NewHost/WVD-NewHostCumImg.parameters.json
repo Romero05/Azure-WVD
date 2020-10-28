@@ -3,49 +3,40 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Prefix": {
-      "value": "vmfolwvdsh"
+      "value": "Optimize"
     },
     "AdminUserName": {
-      "value": "admshsi"
-    },
-    "AdminPassword": {
-      "value": "Puka@set500S$t"
+      "value": "lntad"
     },
     "DomainFQDN": {
-      "value": "folloren.keyhosting.no"
+      "value": "Domain"
     },
     "Instance": {
       "value": 1
+    },
+    "OperatingSystem": {
+      "value": "Client"
     },
     "VMSize": {
       "value": "Small"
     },
     "VnetRgName": {
-      "value": "rg-infra"
+      "value": "Provide The Resource Group"
     },
     "VnetName": {
-      "value": "vnet-folloren"
+      "value": "Provide The Virualt Network Name"
     },
     "SubnetName": {
-      "value": "snet-backend"
+      "value": "Provide The Subnet"
     },
     "ProfilePath": {
-      "value": null
+      "value": "Provide the FSLogix Profile Store Location"
     },
     "RegistrationToken": {
-      "value": null
+      "value": "Provide The Registration Token of Your Host Pool"
     },
     "Optimize": {
       "value": true
-    },
-    "galleryName": {
-      "value": "sig_wvd_prod"
-    },
-    "galleryImageDefinitionName": {
-      "value": "hp-Prod-02"
-    },
-    "galleryImageVersionName": {
-      "value": "10.0.2"
     }
   }
 }
