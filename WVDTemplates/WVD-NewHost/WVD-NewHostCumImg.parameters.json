@@ -3,37 +3,49 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Prefix": {
-      "value": "WVD"
+      "value": "vmfolwvdsh"
     },
     "AdminUserName": {
-      "value": "lntad"
+      "value": "admshsi"
+    },
+    "AdminPassword": {
+      "value": "Puka@set500S$t"
     },
     "DomainFQDN": {
-      "value": "Test"
+      "value": "folloren.keyhosting.no"
     },
     "Instance": {
-      "value": 2
+      "value": 1
     },
     "VMSize": {
-      "value": "Large"
+      "value": "Small"
     },
     "VnetRgName": {
-      "value": "Test"
+      "value": "rg-infra"
     },
     "VnetName": {
-      "value": "Test"
+      "value": "vnet-folloren"
     },
     "SubnetName": {
-      "value": "Test"
+      "value": "snet-backend"
     },
     "ProfilePath": {
-      "value": "Test"
+      "value": null
     },
     "RegistrationToken": {
-      "value": "211243435435"
+      "value": null
     },
     "Optimize": {
       "value": true
+    },
+    "galleryName": {
+      "value": "sig_wvd_prod"
+    },
+    "galleryImageDefinitionName": {
+      "value": "hp-Prod-02"
+    },
+    "galleryImageVersionName": {
+      "value": "10.0.2"
     }
   }
 }
