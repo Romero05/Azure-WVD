@@ -1,4 +1,6 @@
 <#Author       : Dean Cefola
+Edited by      : Shehan Silva
+Version        : v1
 # Creation Date: 09-15-2019
 # Usage        : Windows Virtual Desktop Scripted Install
 
@@ -18,6 +20,7 @@
 # 10/07/2019                     4.3        Add FSLogix Office Container Reg entries for easier management
 # 10/16/2019                     5.0        Add Windows 7 Support
 # 07/20/2020                     6.0        Add WVD Optimize Code from The-Virtual-Desktop-Team
+# 10/28/2020                     7.0        Remove FSLogix configuration and installation and installing RDSH on Windows 7
 #
 #*********************************************************************************
 #
