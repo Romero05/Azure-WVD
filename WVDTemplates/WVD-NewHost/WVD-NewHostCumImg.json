@@ -4,7 +4,7 @@
   "parameters": {
     "Prefix": {
       "type": "string",
-      "defaultValue": "wvd"
+      "defaultValue": ""
     },
     "AdminUserName": {
       "type": "string"
@@ -88,13 +88,13 @@
     },
     "VM_SIZES": {
       "Small": {
-        "WVDsize": "Standard_B2ms"
+        "WVDsize": "Standard D2s_v3"
       },
       "Medium": {
-        "WVDsize": "Standard_DS3_v2"
+        "WVDsize": "Standard D8s v3"
       },
       "Large": {
-        "WVDsize": "Standard_DS14_v2"
+        "WVDsize": "Standard D16s_v3"
       }
     },
     "License": {
