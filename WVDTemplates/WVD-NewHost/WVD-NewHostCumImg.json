@@ -88,13 +88,13 @@
     },
     "VM_SIZES": {
       "Small": {
-        "WVDsize": "Standard D2s_v3"
+        "WVDsize": "Standard_D2s_v3"
       },
       "Medium": {
-        "WVDsize": "Standard D8s v3"
+        "WVDsize": "Standard_D8s v3"
       },
       "Large": {
-        "WVDsize": "Standard D16s_v3"
+        "WVDsize": "Standard_D16s_v3"
       }
     },
     "License": {
