@@ -46,8 +46,6 @@ Param (
 $LocalWVDpath            = "c:\temp\wvd\"
 $WVDBootURI              = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH'
 $WVDAgentURI             = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv'
-$FSLogixURI              = 'https://aka.ms/fslogix_download'
-$FSInstaller             = 'FSLogixAppsSetup.zip'
 $WVDAgentInstaller       = 'WVD-Agent.msi'
 $WVDBootInstaller        = 'WVD-Bootloader.msi'
 
