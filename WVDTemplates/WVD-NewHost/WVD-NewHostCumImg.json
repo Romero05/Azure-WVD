@@ -108,7 +108,7 @@
         "License": "Windows_Client"
       }
     },
-    "VMName": "[concat(parameters('Prefix'),'-VM-')]",
+    // "VMName": "[concat(parameters('Prefix'),'-VM-')]",
     "subnetRef": "[concat(subscription().id,'/resourceGroups/',parameters('VnetRgName'),'/providers/Microsoft.Network/virtualNetworks/', parameters('VnetName'),'/subnets/', parameters('subnetName'))]",
     "JoinUser": "[concat(parameters('adminUsername'),'@',parameters('DomainFQDN'))]",
     "fileUris": "https://raw.githubusercontent.com/Romero05/Azure-WVD/main/Powershell/New-WVDSessionHostCusm.ps1",
@@ -116,12 +116,23 @@
     "firstFileNameString": "[variables('UriFileNamePieces')[sub(length(variables('UriFileNamePieces')), 1)]]",
     "firstFileNameBreakString": "[split(variables('firstFileNameString'), '?')]",
     "firstFileName": "[variables('firstFileNameBreakString')[0]]",
-    "Arguments": "[string(concat('-ProfilePath ', parameters('ProfilePath'), ' -RegistrationToken ', parameters('RegistrationToken'), ' -Optimize ', parameters('Optimize')))]"
+    "Arguments": "[string(concat('-ProfilePath ', parameters('ProfilePath'), ' -RegistrationToken ', parameters('RegistrationToken'), ' -Optimize ', parameters('Optimize')))]",
+    "vm_name":{
+      "copy": [
+        {
+          "name": "nameArray",
+          "count": "[parameters('Instance')]",
+          "input": {
+            "name": "[concat(parameters('Prefix'),'-',string(copyIndex('nameArray',2)))]"
+          }
+        }
+      ]
+    }
   },
   "resources": [
     {
       "type": "Microsoft.Network/networkInterfaces",
-      "name": "[concat(variables('VMName'),copyIndex(),'-nic')]",
+      "name": "[concat(variables('vm_name').nameArray[copyIndex()].name,'-nic')]",
       "apiVersion": "2018-10-01",
       "location": "[resourceGroup().location]",
       "copy": {
@@ -149,7 +160,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
-      "name": "[concat(variables('VMName'),copyIndex(2))]",
+      "name": "[variables('vm_name').nameArray[copyIndex()].name]",
       "apiVersion": "2019-03-01",
       "location": "[resourceGroup().location]",
       "copy": {
@@ -166,7 +177,7 @@
         },
         "storageProfile": {
           "osDisk": {
-            "name": "[concat(variables('VMName'),copyIndex(),'-OSDisk')]",
+            "name": "[concat(variables('vm_name').nameArray[copyIndex()].name,'-OSDisk')]",
             "createOption": "FromImage",
             "managedDisk": {
               "storageAccountType": "StandardSSD_LRS"
@@ -179,12 +190,12 @@
         "networkProfile": {
           "networkInterfaces": [
             {
-              "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(variables('VMName'),copyIndex(),'-nic'))]"
+              "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(variables('vm_name').nameArray[copyIndex()].name,'-nic'))]"
             }
           ]
         },
         "osProfile": {
-          "computerName": "[concat(variables('VMName'),copyIndex())]",
+          "computerName": "[variables('vm_name').nameArray[copyIndex()].name]",
           "adminUsername": "[parameters('AdminUserName')]",
           "adminPassword": "[parameters('AdminPassword')]",
           "windowsConfiguration": {
@@ -203,7 +214,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('VMName'),copyIndex(), '/joinDomain')]",
+      "name": "[concat(variables('vm_name').nameArray[copyIndex()].name,'/joinDomain')]",
       "apiVersion": "2015-06-15",
       "location": "[resourceGroup().location]",
       "copy": {
@@ -234,7 +245,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('VMName'),copyIndex(),'/CustomScriptExtension')]",
+      "name": "[concat(variables('vm_name').nameArray[copyIndex()].name,'/CustomScriptExtension')]",
       "apiVersion": "2015-06-15",
       "location": "[resourceGroup().location]",
       "copy": {
