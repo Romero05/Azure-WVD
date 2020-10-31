@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Prefix": {
-      "value": "Optimize"
+      "value": "WVDSH"
     },
     "AdminUserName": {
-      "value": "lntad"
+      "value": "Admin"
     },
     "DomainFQDN": {
-      "value": "Domain"
+      "value": "Domain.local"
     },
     "Instance": {
       "value": 1
