@@ -14,6 +14,6 @@ What this will do:
 
 # Deploy New Session Host With Customer Image
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRomero05%2FAzure-WVD%2Fmain%2FWVDTemplates%2FWVD-NewHost%2FWVD-NewHostCumImg.json" rel="nofollow">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRomero05%2FAzure-WVD%2Fmain%2FWVDTemptest%2Fazuredeploy.json" rel="nofollow">
   <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
