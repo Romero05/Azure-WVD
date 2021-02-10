@@ -7,8 +7,6 @@
 # Date                         Version      Changes
 #------------------------------------------------------------------------
 # 09/15/2019                     1.0        Intial Version
-# 09/16/2019                     2.0        Add FSLogix installer
-# 09/16/2019                     2.1        Add FSLogix Reg Keys 
 # 09/16/2019                     2.2        Add Input Parameters 
 # 09/16/2019                     2.3        Add TLS 1.2 settings
 # 09/17/2019                     3.0        Chang download locations to dynamic
@@ -143,7 +141,7 @@ If ($Optimize -eq $true) {
     Add-Content -LiteralPath C:\New-WVDSessionHost.log "Creating C:\Optimize folder"
     New-Item -Path C:\ -Name Optimize -ItemType Directory -ErrorAction SilentlyContinue
     $LocalOptimizePath = "C:\Optimize\"
-    $WVDOptimizeURL = 'https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool/archive/master.zip'
+    $WVDOptimizeURL = 'https://github.com/Romero05/WVD-Optimization-Tool-Custom/archive/main.zip'
     $WVDOptimizeInstaller = "Windows_10_VDI_Optimize-master.zip"
     Invoke-WebRequest `
         -Uri $WVDOptimizeURL `
