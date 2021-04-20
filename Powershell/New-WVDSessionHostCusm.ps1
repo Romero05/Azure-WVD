@@ -143,7 +143,7 @@ If ($Optimize -eq $true) {
     New-Item -Path C:\ -Name Optimize -ItemType Directory -ErrorAction SilentlyContinue
     $LocalOptimizePath = "C:\Optimize\"
     $WVDOptimizeURL = 'https://github.com/Romero05/WVD-Optimization-Tool-Custom/archive/main.zip'
-    $WVDOptimizeInstaller = "Windows_10_VDI_Optimize-master.zip"
+    $WVDOptimizeInstaller = "WVD-Optimization-Tool-Custom-main.zip"
     Invoke-WebRequest `
         -Uri $WVDOptimizeURL `
         -OutFile "$LocalOptimizePath$WVDOptimizeInstaller"
@@ -154,11 +154,11 @@ If ($Optimize -eq $true) {
     ###############################
     Add-Content -LiteralPath C:\New-WVDSessionHost.log "Optimize downloaded and extracted"
     Expand-Archive `
-        -LiteralPath "C:\Optimize\Windows_10_VDI_Optimize-master.zip" `
+        -LiteralPath "C:\Optimize\WVD-Optimization-Tool-Custom-main.zip" `
         -DestinationPath "$LocalOptimizePath" `
         -Force `
         -Verbose
-    Set-Location -Path C:\Optimize\Virtual-Desktop-Optimization-Tool-master
+    Set-Location -Path C:\Optimize\WVD-Optimization-Tool-Custom-main
 
 
     #################################
